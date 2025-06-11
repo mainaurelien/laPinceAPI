@@ -1,8 +1,22 @@
 
 services:
+
+  api:
+    build:
+      context: ./back
+      dockerfile: Dockerfile.api
+    restart: always
+    depends_on:
+    - db
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    container_name: lapince-api
+
   db:
     image: postgres:16
-    restart: always
+    container_name: lapince_database
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -11,20 +25,6 @@ services:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-
-  api:
-    build: ./back
-    volumes:
-      - ./back:/app
-    ports:
-      - "3000:3000"
-    environment:
-      DB_USER: postgres
-      DB_PASSWORD: postgres
-      DB_NAME: lapince
-      DB_HOST: db
-    depends_on:
-      - db
 
 volumes:
   pgdata:
