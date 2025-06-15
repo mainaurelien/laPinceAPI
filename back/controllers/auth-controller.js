@@ -6,6 +6,7 @@ export const authController = {
     
     async register(req,res) {
         try {
+            //throw new Error("Erreur test 500"); Pour test error(500)
             const email = req.body.email;
             const password = req.body.password;
             

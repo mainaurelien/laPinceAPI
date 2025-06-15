@@ -1,8 +1,6 @@
 import "dotenv/config";
 import { Category } from "../models/associations.js";
 
-console.log("Seeding categories started...");
-
 export const seedCategories = async () => {
     try {
         const count = await Category.count(); // Compte les catégories existantes

@@ -1,0 +1,196 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "lapinceAPI",
+    "collectionId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+    "dateExported": "2025-06-15T16:13:52.194Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "bec4d422-a26b-4097-a745-66bfcfc4714b",
+            "colId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+            "containerId": "",
+            "name": "(notification)-POST/notifications",
+            "url": "http://localhost:3000/api/notifications",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-06-15T14:24:43.622Z",
+            "modified": "2025-06-15T16:02:42.841Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1MDAwMjgyNCwiZXhwIjoxNzUwMDg5MjI0fQ.iiwHrpbY6DQsBvh3McP_Hz65tTeKQkmZg6tMgZvhAaw"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \n  \"message\": \"5 notif\"\n  \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e1f17a52-537a-4026-9556-0ea65ecb13c0",
+            "colId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+            "containerId": "",
+            "name": "(notification)-GET/notifications",
+            "url": "http://localhost:3000/api/notifications",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-06-15T14:31:28.815Z",
+            "modified": "2025-06-15T16:01:53.230Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1MDAwMjgyNCwiZXhwIjoxNzUwMDg5MjI0fQ.iiwHrpbY6DQsBvh3McP_Hz65tTeKQkmZg6tMgZvhAaw"
+                }
+            ]
+        },
+        {
+            "_id": "22f43fc2-deaa-452b-bb5e-114599bc4ce4",
+            "colId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+            "containerId": "",
+            "name": "(notification)-PUT/notifications",
+            "url": "http://localhost:3000/api/notifications/2",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-06-15T14:32:57.136Z",
+            "modified": "2025-06-15T16:03:35.747Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1MDAwMjgyNCwiZXhwIjoxNzUwMDg5MjI0fQ.iiwHrpbY6DQsBvh3McP_Hz65tTeKQkmZg6tMgZvhAaw"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \n  \"message\": \"Nnotif\"\n  \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a7d49373-635e-4933-91e8-5463f777f818",
+            "colId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+            "containerId": "",
+            "name": "(notification)-DELETE/notifications:/id",
+            "url": "http://localhost:3000/api/notifications/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2025-06-15T14:39:50.146Z",
+            "modified": "2025-06-15T16:03:54.998Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1MDAwMjgyNCwiZXhwIjoxNzUwMDg5MjI0fQ.iiwHrpbY6DQsBvh3McP_Hz65tTeKQkmZg6tMgZvhAaw"
+                }
+            ]
+        },
+        {
+            "_id": "dbcb0b36-19f1-45c7-983c-c63b674cacc9",
+            "colId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+            "containerId": "",
+            "name": "(notification)-PUT/notifications/:id/read",
+            "url": "http://localhost:3000/api/notifications/3/read",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2025-06-15T14:41:30.152Z",
+            "modified": "2025-06-15T16:06:27.554Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1MDAwMjgyNCwiZXhwIjoxNzUwMDg5MjI0fQ.iiwHrpbY6DQsBvh3McP_Hz65tTeKQkmZg6tMgZvhAaw"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"is_read\": true\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b61ea3c4-7bf0-412e-afe6-f86bed1785ea",
+            "colId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+            "containerId": "",
+            "name": "(error)400",
+            "url": "http://localhost:3000/api/register",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2025-06-15T15:32:06.193Z",
+            "modified": "2025-06-15T16:06:44.627Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"email.email.email\",\n  \"password\": \"123Rkk\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "72aa2f11-f643-4869-876f-b07188e6c8a7",
+            "colId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+            "containerId": "",
+            "name": "(error)400",
+            "url": "http://localhost:3000/api/register",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2025-06-15T15:38:20.640Z",
+            "modified": "2025-06-15T16:06:56.810Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"email@email.email\",\n  \"password\": \"123Rk\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2d4f381a-5159-47d5-92c9-33044bec787d",
+            "colId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+            "containerId": "",
+            "name": "(error)401",
+            "url": "http://localhost:3000/api/user",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2025-06-15T15:40:07.606Z",
+            "modified": "2025-06-15T16:07:02.927Z",
+            "headers": []
+        },
+        {
+            "_id": "cea7d931-1ea1-4e3d-954d-92197b03e341",
+            "colId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+            "containerId": "",
+            "name": "(error)403",
+            "url": "http://localhost:3000/api/budgets/1",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2025-06-15T15:41:54.889Z",
+            "modified": "2025-06-15T16:07:11.377Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1MDAwMjI1NywiZXhwIjoxNzUwMDg4NjU3fQ.OqkBUlQ36KLkqvcMPCjCHECFn7fXFoZxiV6x2xannIM"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"budgetMODIF\",\n  \"limit\": 100,\n  \"categoryId\": 5\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7588e030-bcad-4841-a245-fbda9340b34b",
+            "colId": "7b831973-0dc2-4997-8648-7d44a2a04f70",
+            "containerId": "",
+            "name": "(error)500",
+            "url": "http://localhost:3000/api/register",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2025-06-15T15:48:17.526Z",
+            "modified": "2025-06-15T16:09:04.741Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"lapince2025@gmail.com\",\n  \"password\": \"lapince2025\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "ndHyvIjeaciDGUcqmI_FbWC3AAiKVNlbFnxf22fBixKIiDVlOfaK4NUAZUPFpc2AxdqM6LxnxV1cZCrIxOQ08A"
+}

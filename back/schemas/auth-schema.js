@@ -1,10 +1,15 @@
 import Joi from "joi";
 
 // Schéma de validation pour l'inscription
-export const registerSchema = Joi.object({              // cree un nouvel objet de validation qui definit les regles
-    name: Joi.string().min(3).max(30).required(),       // la valeur doit etre une string de lomgueur min de 3 et max de 30, .required() // champ obligatoire
-    email: Joi.string().email().required(),            // doit correspondre au format email valide
-    password: Joi.string().min(6).max(50).required(),
+export const registerSchema = Joi.object({              
+    email: Joi.string().email().required(),            
+    password: Joi.string()
+  .pattern(new RegExp('^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,50}$')) //(?=.*[A-Za-z]) : au moins une lettre, (?=.*\d) : au moins un chiffre, [A-Za-z\d]{6,50} : autorise uniquement lettres et chiffres, et impose une longueur entre 6 et 50
+  .required()
+  .messages({
+    'string.pattern.base': 'Le mot de passe doit contenir au moins une lettre et un chiffre, et faire entre 6 et 50 caractères.',
+    'string.empty': 'Le mot de passe est requis.',
+  }),
 });
 
 // Schéma de validation pour la connexion
