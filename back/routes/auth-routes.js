@@ -1,13 +1,15 @@
 import express from 'express';
-import { authcontroller } from '../controllers/auth-controller.js';
+import { authController } from '../controllers/auth-controller.js';
+import { validate } from '../middlewares/validate.js';
+import { registerSchema, loginSchema } from '../schemas/auth-schema.js';
 import { verifyToken } from '../middlewares/verifyToken.js';
 
-const router = express.Router();
+const router = express.Router()
 
-router.post('/register', authcontroller.register);
-router.post('/login', authcontroller.login);
-router.put('/user', verifyToken, authcontroller.updateUser)
-router.delete('/user', verifyToken, authcontroller.deleteUser);
-router.get('/user', verifyToken, authcontroller.getUser);
+router.post('/register', validate(registerSchema), authController.register);
+router.post('/login', validate(loginSchema), authController.login);
+router.get('/user', verifyToken, authController.getUser);
+router.put('/user', verifyToken, validate(registerSchema), authController.updateUser);
+router.delete('/user', verifyToken, authController.deleteUser);
 
 export const authRouter = router;

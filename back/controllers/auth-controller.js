@@ -2,7 +2,7 @@ import { User } from "../models/associations.js";
 import argon2 from 'argon2';
 import jwt from 'jsonwebtoken';
 
-export const authcontroller = {
+export const authController = {
     
     async register(req,res) {
         try {
